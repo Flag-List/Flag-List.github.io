@@ -13,12 +13,17 @@ let countries = {"BD": "Bangladesh", "BE": "Belgium", "BF": "Burkina Faso", "BG"
 let wrapper = document.getElementById("flags");
 
 Object.keys(countries).forEach(key => {
-    let el = document.createElement("a");
+    let el = document.createElement("div");
     el.setAttribute("href", `/details.html?c=${key}`);
     let img = document.createElement("img");
     img.setAttribute("loading", "lazy");
     img.setAttribute("src", `https://flagpedia.net/data/flags/h160/${key.toLowerCase()}.png`);
+    let name = document.createElement("p");
+    name.innerText = countries[key];
+    let hr = document.createElement("hr");
     el.appendChild(img);
+    el.appendChild(name);
+    el.appendChild(hr)
     wrapper.appendChild(el);
 })
 
