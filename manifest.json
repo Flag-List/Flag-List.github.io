@@ -1,0 +1,18 @@
+{
+    "name": "Flags of all countries",
+    "short_name": "Flags",
+    "start_url": "/index.html",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Browse flags of all countries",
+    "icons": [{
+      "src": "images/flags_logo_1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable monochrome"
+    }],
+    "theme_color": "white",
+    "orientation": "any",
+    "categories": ["geography", "politics", "flags", "design"]
+  }
