@@ -15,9 +15,10 @@ const PRECACHE_URLS = [
 
 
 Object.keys(countries).forEach(key => {
-    let url = `https://flagpedia.net/data/flags/h160/${key.toLowerCase()}.png`;
-    PRECACHE_URLS.push(url)
+  let url = `https://flagpedia.net/data/flags/h160/${key.toLowerCase()}.png`;
+  PRECACHE_URLS.push(url)
 })
+
 
 
 // The install handler takes care of precaching the resources we always need.

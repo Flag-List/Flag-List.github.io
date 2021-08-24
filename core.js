@@ -31,3 +31,13 @@ Object.keys(countries).forEach(key => {
 })
 
 
+/*
+Object.keys(countries).forEach(async key => {
+    let url = `https://flagpedia.net/data/flags/h160/${key.toLowerCase()}.png`;
+    const a = document.createElement("a");
+    a.download = url;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+})
+*/
