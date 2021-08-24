@@ -19,6 +19,9 @@ Object.keys(countries).forEach(key => {
     img.setAttribute("loading", "lazy");
     img.setAttribute("src", `https://flagpedia.net/data/flags/h160/${key.toLowerCase()}.png`);
     let name = document.createElement("p");
+    name.innerHTML += `<span class="mdl-chip">
+        <span class="mdl-chip__text">${key}</span>
+    </span>`
     name.innerText = countries[key];
     let hr = document.createElement("hr");
     el.appendChild(img);
